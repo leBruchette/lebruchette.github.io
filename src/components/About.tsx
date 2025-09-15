@@ -1,8 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { User, Code, Server, Cloud, Settings, GitBranch, Terminal } from 'lucide-react'
-import { content } from '@/data/content'
+import { Code, Server, Cloud, Settings, GitBranch, Terminal } from 'lucide-react'
 
 export default function About() {
     const containerVariants = {
@@ -132,7 +131,7 @@ export default function About() {
                         {/*</div>*/}
                         <div className="space-y-4 text-gray-700 dark:text-gray-400 leading-relaxed">
                             <p>
-                                I began my career as a full stack developer, developing in full stack roles using various Java/JVM based ecosystems. Over time, I've transitioned to more of a backend and DevOps focus, driven by a passion for API development and system architecture.
+                                I began my career as a full stack developer, developing in full stack roles using various Java/JVM based ecosystems. Over time, I&apos;ve transitioned to more of a backend and DevOps focus, driven by a passion for API development and system architecture.
                             </p>
                             <p>
                                 Most recently, my focus has been infrastructure and IaC solutioning, including containerization and CI/CD automation and tooling. With my combined experience in full stack development and DevOps, I bring a comprehensive perspective to building and maintaining robust, scalable systems.

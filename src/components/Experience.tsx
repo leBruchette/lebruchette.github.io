@@ -26,13 +26,13 @@ export default function Experience() {
         }
     }
 
-    const timelineVariants = {
-        hidden: { height: 0 },
-        visible: {
-            height: "100%",
-            transition: { duration: 1.5, ease: [0.25, 0.1, 0.25, 1] }
-        }
-    }
+    // const timelineVariants = {
+    //     hidden: { height: 0 },
+    //     visible: {
+    //         height: "100%",
+    //         transition: { duration: 1.5, ease: [0.25, 0.1, 0.25, 1] }
+    //     }
+    // }
 
     return (
 
@@ -57,7 +57,6 @@ export default function Experience() {
                     {/* Timeline Line */}
                     <div className="absolute left-8 top-0 w-0.5 bg-gray-300 h-full hidden md:block">
                         <motion.div
-                            variants={timelineVariants}
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true }}
@@ -92,6 +91,7 @@ export default function Experience() {
                                             <div className="flex-shrink-0">
                                                 <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-blue-600 rounded-xl flex items-center justify-center  text-white font-bold text-xl shadow-lg">
                                                     {/*{job.company.charAt(0)}*/}
+                                                    {/* eslint-disable-next-line @next/next/no-img-element */}
                                                     <img src={job.logo} alt={job.company + " logo"} className="w-16 h-16 object-contain rounded-xl" />
                                                 </div>
                                             </div>
