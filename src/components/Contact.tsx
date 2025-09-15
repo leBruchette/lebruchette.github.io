@@ -65,7 +65,7 @@ export default function Contact() {
                     viewport={{once: true}}
                     className="mb-16"
                 >
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
                         {contactMethods.map((method, index) => (
                             <motion.div
                                 key={index}
