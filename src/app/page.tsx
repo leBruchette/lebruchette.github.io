@@ -1,11 +1,8 @@
 import Hero from '@/components/Hero'
-// import About from '@/components/About'
-// import Experience from '@/components/Experience'
-import ExperienceTimeline from '@/components/ExperienceTimeline'
+import About from '@/components/About'
+import Experience from '@/components/Experience'
 import Navigation from '@/components/Navigation'
 // import Skills from '../../.ignore/Skills'
-// import SkillsTimelineUi from '../components/SkillsTimeline'
-import ThemeSwitcher from "@/components/ThemeSwitcher"
 // import Contact from '@/components/Contact'
 
 export default function Home() {
@@ -15,14 +12,11 @@ export default function Home() {
             <section id="home">
                 <Hero />
             </section>
-            {/*<section id="about">*/}
-            {/*    <About />*/}
-            {/*</section>*/}
-            {/*<section id="experience">*/}
-            {/*    <Experience />*/}
-            {/*</section>*/}
+            <section id="about">
+                <About />
+            </section>
             <section id="experience">
-                <ExperienceTimeline />
+                <Experience />
             </section>
             {/*<section id="skills">*/}
             {/*    <Skills />*/}
@@ -33,7 +27,6 @@ export default function Home() {
             {/*<section id="contact">*/}
             {/*    <Contact />*/}
             {/*</section>*/}
-            <ThemeSwitcher />
         </main>
     )
 }

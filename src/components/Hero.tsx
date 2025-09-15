@@ -2,12 +2,12 @@
 
 import {motion} from 'framer-motion'
 import {content} from '@/data/content'
-import {Github, Linkedin, Mail, Download} from 'lucide-react'
+import {Github, Linkedin, Mail} from 'lucide-react'
 
 export default function Hero() {
     return (
         <section
-            className="min-h-screen flex items-center justify-center px-4 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+            className="min-h-screen flex items-center justify-center px-4 bg-gradient-to-br from-slate-900 via-purple-950 to-slate-900">
             <div className="max-w-4xl mx-auto text-center pt-16">
                 <motion.div
                     initial={{opacity: 0, y: 20}}
