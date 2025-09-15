@@ -121,15 +121,15 @@ export default function About() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
-                    className="mb-16"
+                    className="mb-12"
                 >
                     <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8">
-                        <div className="flex items-center gap-3 mb-6">
-                            <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-blue-600 rounded-xl flex items-center justify-center">
-                                <User size={24} className="text-white" />
-                            </div>
-                            <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-300">My Journey</h3>
-                        </div>
+                        {/*<div className="flex items-center gap-3 mb-6">*/}
+                        {/*    <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-blue-600 rounded-xl flex items-center justify-center">*/}
+                        {/*        <User size={24} className="text-white" />*/}
+                        {/*    </div>*/}
+                        {/*    <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-300">My Journey</h3>*/}
+                        {/*</div>*/}
                         <div className="space-y-4 text-gray-700 dark:text-gray-400 leading-relaxed">
                             <p>
                                 I began my career as a full stack developer, developing in full stack roles using various Java/JVM based ecosystems. Over time, I've transitioned to more of a backend and DevOps focus, driven by a passion for API development and system architecture.
@@ -140,43 +140,6 @@ export default function About() {
                         </div>
                     </div>
                 </motion.div>
-
-                {/* Current Focus Areas */}
-                <motion.div
-                    variants={containerVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    className="mb-16"
-                >
-                    <motion.h3
-                        variants={itemVariants}
-                        className="text-3xl font-bold text-gray-900 dark:text-gray-200 text-center mb-12"
-                    >
-                        Current Focus Areas
-                    </motion.h3>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {focusAreas.map((area, index) => (
-                            <motion.div
-                                key={index}
-                                variants={cardVariants}
-                                whileHover={{ scale: 1.02 }}
-                                className="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 text-center"
-                            >
-                                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4">
-                                    <area.icon size={28} className="text-white" />
-                                </div>
-                                <h4 className="text-lg font-semibold text-gray-800 dark:text-gray-300 mb-2">
-                                    {area.title}
-                                </h4>
-                                <p className="text-sm text-gray-600 dark:text-gray-400">
-                                    {area.description}
-                                </p>
-                            </motion.div>
-                        ))}
-                    </div>
-                </motion.div>
-
                 {/* Tech Journey Timeline */}
                 <motion.div
                     variants={containerVariants}
@@ -186,17 +149,10 @@ export default function About() {
                 >
                     <motion.h3
                         variants={itemVariants}
-                        className="text-3xl font-bold text-gray-900 dark:text-gray-200 text-center mb-4"
+                        className="text-3xl font-bold text-gray-900 dark:text-gray-200 text-center mb-8"
                     >
-                        A Brief History of My Tech Journey
+                        My Tech Journey
                     </motion.h3>
-                    <motion.p
-                        variants={itemVariants}
-                        className="text-gray-600 dark:text-gray-300 text-center mb-12 max-w-2xl mx-auto"
-                    >
-                        Each era brought new challenges, learnings, and that occasional lightbulb moment
-                    </motion.p>
-
                     <div className="relative">
                         {/* Timeline Line */}
                         <div className="absolute left-8 top-0 w-0.5 bg-gray-300 dark:bg-gray-600 h-full hidden md:block">
@@ -255,30 +211,39 @@ export default function About() {
                     </div>
                 </motion.div>
 
-                {/* Call to Action */}
+                {/* Current Focus Areas */}
                 <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="visible"
                     viewport={{ once: true }}
-                    transition={{ duration: 0.8, delay: 0.4 }}
-                    className="text-center mt-16"
+                    className="mb-16 mt-16"
                 >
-                    <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8">
-                        <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-300 mb-4">
-                            Let's Build Something Great Together
-                        </h3>
-                        <p className="text-gray-600 dark:text-gray-400 mb-6 max-w-2xl mx-auto">
-                            Whether you need backend architecture, DevOps automation, or infrastructure solutions,
-                            I'd love to discuss how we can work together on your next project.
-                        </p>
-                        <motion.a
-                            href={`mailto:${content?.personal?.email || 'hello@example.com'}`}
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-blue-600 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
-                        >
-                            Get In Touch
-                        </motion.a>
+                    <motion.h3
+                        variants={itemVariants}
+                        className="text-3xl font-bold text-gray-900 dark:text-gray-200 text-center mb-12"
+                    >
+                        Current Focus Areas
+                    </motion.h3>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {focusAreas.map((area, index) => (
+                            <motion.div
+                                key={index}
+                                variants={cardVariants}
+                                whileHover={{ scale: 1.02 }}
+                                className="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 text-center"
+                            >
+                                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+                                    <area.icon size={28} className="text-white" />
+                                </div>
+                                <h4 className="text-lg font-semibold text-gray-800 dark:text-gray-300 mb-2">
+                                    {area.title}
+                                </h4>
+                                <p className="text-sm text-gray-600 dark:text-gray-400">
+                                    {area.description}
+                                </p>
+                            </motion.div>
+                        ))}
                     </div>
                 </motion.div>
             </div>

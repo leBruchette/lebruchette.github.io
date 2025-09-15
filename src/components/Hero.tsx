@@ -2,7 +2,7 @@
 
 import {motion} from 'framer-motion'
 import {content} from '@/data/content'
-import {Github, Linkedin, Mail} from 'lucide-react'
+import {Github, Linkedin} from 'lucide-react'
 
 export default function Hero() {
     return (
@@ -15,14 +15,14 @@ export default function Hero() {
                     transition={{duration: 0.8}}
                     className="mb-8"
                 >
-                    <motion.img
-                        initial={{scale: 0}}
-                        animate={{scale: 1}}
-                        transition={{delay: 0.2, duration: 0.5}}
-                        src="/profile.jpg"
-                        alt="Profile"
-                        className="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-white/20 shadow-xl"
-                    />
+                    {/*<motion.img*/}
+                    {/*    initial={{scale: 0}}*/}
+                    {/*    animate={{scale: 1}}*/}
+                    {/*    transition={{delay: 0.2, duration: 0.5}}*/}
+                    {/*    src="/profile.jpg"*/}
+                    {/*    alt="Profile"*/}
+                    {/*    className="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-white/20 shadow-xl"*/}
+                    {/*/>*/}
 
                     <motion.h1
                         initial={{opacity: 0}}
@@ -41,19 +41,6 @@ export default function Hero() {
                     >
                         {content.personal.title}
                     </motion.p>
-
-                    {/*{content.personal.bio.map((item: string, idx: number) => (*/}
-                    {/*    <motion.span key={idx}*/}
-                    {/*        initial={{opacity: 0}}*/}
-                    {/*        animate={{opacity: 1}}*/}
-                    {/*        transition={{delay: idx + 1 - (idx*.5), duration: 0.8}}*/}
-                    {/*        className="text-lg text-gray-300 mb-5 max-w-2xl mx-auto"*/}
-                    {/*    >*/}
-                    {/*        {item}&nbsp;*/}
-                    {/*    </motion.span>*/}
-                    {/*))}*/}
-
-
                 </motion.div>
 
                 <motion.div
@@ -76,11 +63,6 @@ export default function Hero() {
                             <Linkedin size={28}/>
                         </a>
                     )}
-                    <a href={`mailto:${content.personal.email}`}
-                       className="transition-all duration-300 transform hover:scale-110"
-                       style={{color: 'rgba(255, 255, 255, 0.7)'}}>
-                        <Mail size={28}/>
-                    </a>
                 </motion.div>
             </div>
         </section>
