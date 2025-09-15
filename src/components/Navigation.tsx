@@ -92,6 +92,7 @@ export default function Navigation() {
                                     key={item.name}
 
                                     onClick={() => {
+                                        // eslint-disable-next-line @typescript-eslint/no-unused-expressions
                                         item.download ? window.open(item.href, '_blank') : scrollToSection(item.href)
                                     }
                                     }
@@ -145,6 +146,7 @@ export default function Navigation() {
                                 <button
                                     key={item.name}
                                     onClick={() => {
+                                        // eslint-disable-next-line @typescript-eslint/no-unused-expressions
                                         item.download ? window.open(item.href, '_blank') : scrollToSection(item.href)
                                     }
                                     }

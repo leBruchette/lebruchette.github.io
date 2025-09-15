@@ -2,7 +2,6 @@
 
 import {motion} from 'framer-motion'
 import {Github, Linkedin} from 'lucide-react'
-import {content} from '@/data/content'
 
 export default function Contact() {
     const containerVariants = {
@@ -50,10 +49,10 @@ export default function Contact() {
                     className="text-center mb-16"
                 >
                     <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-200 mb-4">
-                        Let's Build Something Great Together
+                        Let&apos;s Build Something Great Together
                     </h2>
                     <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                        Whether you need backend architecture, DevOps automation, or infrastructure solutions, I'd love
+                        Whether you need backend architecture, DevOps automation, or infrastructure solutions, I&apos;d love
                         to discuss how we can work together on your next project.
                     </p>
                 </motion.div>
