@@ -211,40 +211,40 @@ export default function About() {
                 </motion.div>
 
                 {/* Current Focus Areas */}
-                <motion.div
-                    variants={containerVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    className="mb-16 mt-16"
-                >
-                    <motion.h3
-                        variants={itemVariants}
-                        className="text-3xl font-bold text-gray-900 dark:text-gray-200 text-center mb-12"
-                    >
-                        Current Focus Areas
-                    </motion.h3>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {focusAreas.map((area, index) => (
-                            <motion.div
-                                key={index}
-                                variants={cardVariants}
-                                whileHover={{ scale: 1.02 }}
-                                className="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 text-center"
-                            >
-                                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4">
-                                    <area.icon size={28} className="text-white" />
-                                </div>
-                                <h4 className="text-lg font-semibold text-gray-800 dark:text-gray-300 mb-2">
-                                    {area.title}
-                                </h4>
-                                <p className="text-sm text-gray-600 dark:text-gray-400">
-                                    {area.description}
-                                </p>
-                            </motion.div>
-                        ))}
-                    </div>
-                </motion.div>
+                {/*<motion.div*/}
+                {/*    variants={containerVariants}*/}
+                {/*    initial="hidden"*/}
+                {/*    whileInView="visible"*/}
+                {/*    viewport={{ once: true }}*/}
+                {/*    className="mb-16 mt-16"*/}
+                {/*>*/}
+                {/*    <motion.h3*/}
+                {/*        variants={itemVariants}*/}
+                {/*        className="text-3xl font-bold text-gray-900 dark:text-gray-200 text-center mb-12"*/}
+                {/*    >*/}
+                {/*        Current Focus Areas*/}
+                {/*    </motion.h3>*/}
+                {/*    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">*/}
+                {/*        {focusAreas.map((area, index) => (*/}
+                {/*            <motion.div*/}
+                {/*                key={index}*/}
+                {/*                variants={cardVariants}*/}
+                {/*                whileHover={{ scale: 1.02 }}*/}
+                {/*                className="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 text-center"*/}
+                {/*            >*/}
+                {/*                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4">*/}
+                {/*                    <area.icon size={28} className="text-white" />*/}
+                {/*                </div>*/}
+                {/*                <h4 className="text-lg font-semibold text-gray-800 dark:text-gray-300 mb-2">*/}
+                {/*                    {area.title}*/}
+                {/*                </h4>*/}
+                {/*                <p className="text-sm text-gray-600 dark:text-gray-400">*/}
+                {/*                    {area.description}*/}
+                {/*                </p>*/}
+                {/*            </motion.div>*/}
+                {/*        ))}*/}
+                {/*    </div>*/}
+                {/*</motion.div>*/}
             </div>
         </section>
     )
